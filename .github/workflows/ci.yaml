@@ -1,0 +1,20 @@
+name: Brigade Windows Go Tools CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-2019
+    env:
+      DOCKER_ORG: brigadecore
+    steps:
+      - uses: actions/checkout@main
+      - name: Build Windows Go Tools
+        run: |
+          make build
