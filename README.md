@@ -1,19 +1,19 @@
 # Brigade Windows Go Tools Image
 [![slack](https://img.shields.io/badge/slack-brigade-brightgreen.svg?logo=slack)](https://kubernetes.slack.com/messages/C87MF1RFD)
 
-This project provides a curated set of tools to facilitate building
-[Brigade](https://github.com/brigadecore/brigade) components for _Windows_
-containers. Currently, that amounts to the base
-`golang:<version>-windowsservercore-1809`, plus `cmake` and
-[MinGW](https://www.mingw-w64.org/installed) installed via
-[Chocolately](https://chocolatey.org/).
+This project provides a curated set of tools to facilitate building Go-based
+components of [Brigade](https://github.com/brigadecore/brigade) (even those
+requiring CGO) for _Windows_ containers. Currently, that amounts to the standard
+Go toolchain, [MinGW](https://www.mingw-w64.org), and `cmake`, all installed via
+[MSYS2](https://www.msys2.org/), which provides a Linux-like environment that is
+nevertheless oriented toward building native Windows executables.
 
 > ⚠️&nbsp;&nbsp;This project provides a distinctly different set of tools than
 > the [Brigade Go Tools Image](https://github.com/brigadecore/go-tools), which
 > is the real workhorse image that we utilize for executing tests, linting code,
-> and more. The intent behind this project is _not_ to establish parity, but
-> merely to close gaps that make the base
-> `golang:<version>-windowsservercore-1809` minimally viable for compiling and
+> and more. The intent behind this project is _not_ to establish parity with
+> that image, but merely to address gaps that make the official
+> `golang:<version>-windowsservercore-1809` image non-viable for compiling and
 > linking Go binaries that utilize CGO.
 
 ## Contributing
