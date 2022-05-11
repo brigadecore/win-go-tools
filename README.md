@@ -1,3 +1,7 @@
+> ⚠️&nbsp;&nbsp;__This repository is archived because Brigade and related
+> projects are not currently making use of the image built from the source in
+> the this repository__.
+
 # Brigade Windows Go Tools Image
 [![slack](https://img.shields.io/badge/slack-brigade-brightgreen.svg?logo=slack)](https://kubernetes.slack.com/messages/C87MF1RFD)
 
